@@ -1,0 +1,11 @@
+{
+  "name": "provider-switch",
+  "displayName": "Provider Switch",
+  "version": "0.1.0",
+  "description": "Switch Claude Code between AI provider profiles and API keys without editing settings by hand. Keys live in the OS credential store; profiles hold only references.",
+  "author": {
+    "name": "provider-switch contributors"
+  },
+  "license": "MIT",
+  "keywords": ["providers", "api-keys", "bedrock", "vertex", "gateway", "settings"]
+}

@@ -1,0 +1,49 @@
+{
+  "providers": [
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "auth": "api_key",
+      "defaultBaseUrl": "https://api.anthropic.com",
+      "requiresBaseUrl": false,
+      "knownHosts": ["api.anthropic.com"],
+      "models": [
+        "claude-opus-5-5", "claude-opus-5", "claude-sonnet-5-5",
+        "claude-sonnet-5", "claude-haiku-5-5", "claude-fable-5-1"
+      ],
+      "capabilities": { "modelDiscovery": false, "testConnection": true }
+    },
+    {
+      "id": "anthropic-compatible",
+      "label": "Anthropic-compatible gateway",
+      "auth": "bearer_token",
+      "defaultBaseUrl": null,
+      "requiresBaseUrl": true,
+      "knownHosts": [],
+      "models": [],
+      "capabilities": { "modelDiscovery": false, "testConnection": true }
+    },
+    {
+      "id": "bedrock",
+      "label": "Amazon Bedrock",
+      "auth": "none",
+      "defaultBaseUrl": null,
+      "requiresBaseUrl": false,
+      "knownHosts": [],
+      "models": [],
+      "env": { "CLAUDE_CODE_USE_BEDROCK": "1" },
+      "capabilities": { "modelDiscovery": false, "testConnection": false }
+    },
+    {
+      "id": "vertex",
+      "label": "Google Vertex AI",
+      "auth": "none",
+      "defaultBaseUrl": null,
+      "requiresBaseUrl": false,
+      "knownHosts": [],
+      "models": [],
+      "env": { "CLAUDE_CODE_USE_VERTEX": "1" },
+      "capabilities": { "modelDiscovery": false, "testConnection": false }
+    }
+  ]
+}
